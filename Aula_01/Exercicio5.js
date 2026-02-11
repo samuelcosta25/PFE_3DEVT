@@ -17,3 +17,18 @@
 // Obs: Pesquise qual a diferença entre utilizar um “for”, um “for ... of” ou um
 // “foreach”. Veja qual dessas estruturas se adequa mais para nossa situação
 // problema.
+
+const agendaHorarios = [8, 12, 25, 15, -2, 20];
+let contagemValidos = 0;
+
+agendaHorarios.forEach((horario) => { 
+    if (horario >= 0 && horario < 24) {
+        alert(`Compromisso agendado para as ${horario}h`);
+        contagemValidos++; // Incremento (Semana 1)
+    } else {
+        alert(`Atenção: O horário ${horario}h é inválido!`);
+    }
+});
+
+alert(`--- Relatório Final ---`);
+alert(`Total de compromissos válidos: ${contagemValidos}`);

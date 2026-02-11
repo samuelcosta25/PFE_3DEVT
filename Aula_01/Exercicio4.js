@@ -7,3 +7,15 @@
 // \times 1000 \text{ ms}$).
 // 4. Use a função Math.ceil() para arredondar o resultado para cima.
 // 5. Exiba no console: "Faltam X dias para o seu compromisso!".
+
+let dataHoje = new Date(); // Pega a data atual
+let dataEvento = new Date('2026-12-25'); // Exemplo: Natal de 2026
+
+// Diferença em milissegundos
+let diferencaMs = dataEvento - dataHoje;
+
+// Conversão: ms -> segundos -> minutos -> horas -> dias
+let umDiaMs = 24 * 60 * 60 * 1000;
+let diasFaltando = Math.ceil(diferencaMs / umDiaMs);
+
+alert(`Faltam ${diasFaltando} dias para o seu compromisso!`);

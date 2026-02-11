@@ -8,3 +8,19 @@
 // 4. Retorne a string formatada.
 // 5. Bônus: Use o método split() e length para contar quantas palavras o nome
 // possui.
+
+limparNomeContato(prompt("Digite o nome a ser limpo: "))
+
+function limparNomeContato(nome) {
+    // trim() remove espaços, toUpperCase() deixa em maiúsculo
+    let nomeFormatado = nome.trim().toUpperCase();
+    
+    // Bônus: split(" ") divide a string por espaços e length conta os pedaços
+    let quantidadePalavras = nomeFormatado.split(" ").length;
+    
+    alert(`Nome: ${nomeFormatado}`);
+    alert(`Total de palavras: ${quantidadePalavras}`);
+    
+    return nomeFormatado;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><link rel="stylesheet" href="estilo-card.css">
+
+<div class="editor-layout">
+    <div class="controles">
+        <h3>Personalize seu Card</h3>
+        <input type="text" id="inputNome" placeholder="Seu Nome" onshow="atualizarCartao()">
+        <input type="text" id="inputCargo" placeholder="Seu Cargo" oninput="atualizarCartao()">
+        <select id="corCard" onchange="atualizarCartao()">
+            <option value="#ffffff">Branco Clean</option>
+            <option value="#ff7675">Coral Pink</option>
+            <option value="#55efc4">Mint Leaf</option>
+            <option value="#a29bfe">Shy Purple</option>
+            <option value="#ffeaa7">Sour Lemon</option>
+        </select>
+    </div>
+
+    <div id="cartao">
+        <h4 id="cardNome">Seu Nome</h4>
+        <p id="cardCargo">Seu Cargo</p>
+    </div>
+</div>

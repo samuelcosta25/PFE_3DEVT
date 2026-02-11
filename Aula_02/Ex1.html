@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1 - Termômetro</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="exercicio">
+        <h3>1. Conversor °C para °F</h3>
+        <input type="number" id="tempC" placeholder="Temp em Celsius">
+        <button onclick="converterTemp()">Converter</button>
+        <p id="resTemp">Resultado: --</p>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function converterTemp() {
+        const c = parseFloat(document.getElementById('tempC').value);
+        const f = (c * 1.8) + 32;
+        const display = document.getElementById('resTemp');
+
+        display.innerText = `Resultado: ${f.toFixed(1)}°F`;
+
+        // Altera o estilo do elemento baseado no valor
+        if (f > 80) {
+            display.style.color = "orange";
+            document.body.style.backgroundColor = "#fff5e6";
+        } else {
+            display.style.color = "blue";
+            document.body.style.backgroundColor = "#e6f7ff";
+        }
+    }
+</script>

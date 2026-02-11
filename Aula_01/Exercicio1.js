@@ -13,3 +13,38 @@
 // noites para lazer e não para tarefas.
 // 6. Imprima "Horário Inválido" caso o número esteja fora de 0-23 e “Nível de
 // Prioridade Inválida” caso o número esteja fora de 1-10.
+
+let hora = prompt("Digite a hora da tarefa: ");
+let prioridade = prompt("Digite o nível de prioridade da tarefa: ");
+
+if (hora >= 0 && hora <= 11) {
+    alert("Turno: Manhã");
+    if (prioridade > 8 && prioridade <= 10) {
+        alert("TAREFA CRÍTICA/URGENTE");
+    } else if (prioridade > 6 && prioridade > 0){
+        alert("TAREFA IMPORTANTE");
+    } else if (prioridade <= 6 && prioridade > 0) {
+        alert("TAREFA NÃO IMPORTANTE");
+    } else {
+        alert("Digite um valor de prioridade válido.")
+    }
+} else if (hora >= 12 && hora <= 17) {
+    alert("Turno: Tarde");
+    if (prioridade > 8 && prioridade <= 10) {
+        alert("TAREFA CRÍTICA/URGENTE");
+    } else if (prioridade > 6 && prioridade > 0){
+        alert("TAREFA IMPORTANTE");
+    } else if (prioridade <= 6 && prioridade > 0) {
+        alert("TAREFA NÃO IMPORTANTE");
+    } else {
+        alert("Digite um valor de prioridade válido.")
+    }
+} else if (hora >= 18 && hora <= 23) {
+    alert("Turno: Noite");
+    if (prioridade > 0 && prioridade <= 10){
+        alert("Digite um valor de prioridade válido.")
+    }
+    alert("TAREFA NÃO IMPORTANTE");
+} else {
+    alert("Horário Inválido");
+}
