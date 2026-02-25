@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center; /* Centraliza o .nome1 horizontal e verticalmente */
+    margin: 0;
+}
+
+.nome1 {
+    height: 600px;
+    width: 800px;
+    background-color: aquamarine;  
+    display: grid; /* Cria 1 coluna e 3 linhas de tamanhos iguais (ou conforme o conteúdo) */
+    grid-template-columns: 1fr;
+    place-items: center; /* Centraliza as Camadas 1 (nome2, 3, 4) no meio do grid */
+}
+
+.nome2, .nome3, .nome4 {
+    height: 180px;
+    width: 700px;
+    border: 2px solid black;
+    display: grid; /* Cria 3 colunas para os itens .nome5 */
+    grid-template-columns: repeat(3, 1fr); 
+    place-items: center; /* Centraliza os .nome5 dentro de cada espaço */
+}
+
+/* Cores específicas mantidas */
+.nome2 { background-color: burlywood; }
+.nome3 { background-color: chartreuse; }
+.nome4 { background-color: cadetblue; }
+
+.nome5 {
+    height: 80px;
+    width: 90px;
+    background-color: coral;
+    border: 2px solid black;
+}

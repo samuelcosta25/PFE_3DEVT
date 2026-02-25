@@ -41,7 +41,7 @@ if (hora >= 0 && hora <= 11) {
     }
 } else if (hora >= 18 && hora <= 23) {
     alert("Turno: Noite");
-    if (prioridade > 0 && prioridade <= 10){
+    if (prioridade < 0 && prioridade > 10){
         alert("Digite um valor de prioridade válido.")
     }
     alert("TAREFA NÃO IMPORTANTE");

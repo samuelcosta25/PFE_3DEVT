@@ -9,7 +9,6 @@
 // 5. Bônus: Use o método split() e length para contar quantas palavras o nome
 // possui.
 
-limparNomeContato(prompt("Digite o nome a ser limpo: "))
 
 function limparNomeContato(nome) {
     // trim() remove espaços, toUpperCase() deixa em maiúsculo
@@ -23,4 +22,7 @@ function limparNomeContato(nome) {
     
     return nomeFormatado;
 }
+
+
+limparNomeContato(prompt("Digite o nome a ser limpo: "))
 

@@ -1,17 +1,16 @@
 body{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 .nome1{
     height: 600px;
     width: 800px;
-    background-color: aquamarine;
-    display: flex;
+    background-color: aquamarine;  
+    display: flex; 
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nome2{
@@ -20,7 +19,7 @@ body{
     background-color: burlywood;
     border: 2px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .nome3{
@@ -29,7 +28,7 @@ body{
     background-color: chartreuse;
     border: 2px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .nome4{
@@ -38,7 +37,7 @@ body{
     background-color: cadetblue;
     border: 2px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .nome5{
