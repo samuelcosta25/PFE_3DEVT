@@ -1,0 +1,9 @@
+Utilizar Media Query para 5 padrões de tamanho diferentes:
+
+Maior que 1200px;
+Entre 1000px e 1200px;
+Entre 800px e 1000px;
+Entre 600px e 800px;
+Menor que 600px;
+
+O CSS de cada Media Query fica sob a sua criatividade!
