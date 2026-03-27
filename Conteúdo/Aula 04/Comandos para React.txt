@@ -1,0 +1,5 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+npm create vite@latest meu-primeiro-projeto -- --template react

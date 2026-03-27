@@ -1,0 +1,47 @@
+/* 1. Telas grandes/médias (Laptops/Tablets deitados) */
+
+@media screen and (min-width: 1201px) {
+    img {
+        height: 180px;
+        width: 220px;
+    }
+    body {
+        background-color: chartreuse;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    img {
+        height: 160px;
+        width: 210px;
+    }
+    body {
+        background-color: chocolate;
+    }
+}
+
+/* 2. Telas médias (Tablets) */
+@media screen and (max-width: 1000px) {
+    img {
+        height: 140px;
+        width: 190px;
+    }
+    body {
+        background-color: brown;
+    }
+}
+
+/* 3. Telas pequenas (Celulares/Tablets em pé) */
+@media screen and (max-width: 800px) {
+    img {
+        height: 120px;
+        width: 170px;
+    }
+    body {
+        background-color: blueviolet;
+    }
+}
