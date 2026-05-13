@@ -31,7 +31,7 @@ const App = () => {
         <h2>Etapa Atual: {aulas[etapa].title}</h2>
         <p>{aulas[etapa].desc}</p>
         
-        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>  
           <button style={styles.button} onClick={() => setEtapa(0)}>1. Luz</button>
           <button style={styles.button} onClick={() => setEtapa(1)}>2. Absorção</button>
           <button style={styles.button} onClick={() => setEtapa(2)}>3. Resultado</button>
